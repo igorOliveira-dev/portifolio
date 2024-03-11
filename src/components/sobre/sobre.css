@@ -1,0 +1,41 @@
+.containerSobre {
+    background-color: #96969610;
+    height: calc(80vh - (100px));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.sobreTitle {
+    background-image: linear-gradient(45deg, pink, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 60px;
+}
+
+.contentSobre {
+    color: var(--white);
+    font-size: 20px;
+    max-width: 550px;
+}
+
+.pinguimSobre {
+    height: 300px;
+    animation: giroPinguim 3s linear infinite;
+    z-index: -1;
+}
+
+@keyframes giroPinguim {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 780px) {
+    .pinguimSobre {
+        display: none;
+    }
+}

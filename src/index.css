@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --dark-gray: #222;
+    --black: #111;
+    --white: #fdfdfd;
+    --white-gray: #555;
+    --opacity-black: #00000090;
+}

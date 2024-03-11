@@ -1,0 +1,45 @@
+.containerTecnologias {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tecnologiasTitle {
+    color: transparent;
+    background-image: linear-gradient(45deg, pink, purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 55px;
+}
+
+.lineTecnologias {
+    border-color: rgb(230, 0, 255);
+    margin: 20px;
+    margin-inline: 50px;
+    width: 600px;
+}
+
+@media (max-width: 720px) {
+    .lineTecnologias {
+        width: 400px;
+    }
+}
+
+.tecBox {
+    margin-bottom: 20px;
+    color: #fdfdfd;
+}
+
+.tecTitle {
+    color: rgb(255, 152, 238);
+    text-align: center;
+}
+
+.tecDesc {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 500px;
+}

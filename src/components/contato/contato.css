@@ -1,0 +1,125 @@
+.containerContato {
+    height: calc(100vh - (100px));
+    display: flex;
+    justify-content: center;
+}
+
+.emailMesage, .contactsArea {
+    margin-top: 20px;
+}
+
+.emailMesage {
+    margin-right: 80px;
+}
+
+.contatoTitle {
+    color: transparent;
+    background-image: linear-gradient(45deg, pink, purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 60px;
+}
+
+.formEmail {
+    display: flex;
+    flex-direction: column;
+}
+
+.formEmail > input, textarea {
+    width: 400px;
+    background-color: transparent;
+    border: 1px solid purple;
+    margin-top: 20px;
+    color: #fdfdfd;
+    padding: 10px;
+    background-color: #252525;
+}
+
+.formEmail > input::placeholder, textarea::placeholder {
+    color: #fdfdfd;
+}
+
+.textarea {
+    height: 200px;
+}
+
+.contactsArea {
+    position: relative;
+    top: 80px;
+    height: 300px;
+}
+
+.ghContact {
+    margin-bottom: 10px;
+}
+
+.contactEmailTitle, .redesTitle {
+    color: purple;
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+
+.contactEmailParagraph {
+    color: #fdfdfd;
+    padding-bottom: 45px;
+}
+
+.svgRedes {
+    height: 50px;
+    width: 50px;
+    background-color: #333;
+    border-radius: 20px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.svgRedes:hover {
+    scale: 1.1;
+}
+
+.instaIcon {
+    box-sizing: border-box;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.ghContact, .instaContact {
+    display: flex;
+    color: #fdfdfd;
+    align-items: center;
+}
+
+.ghContact > p, .instaContact > p {
+    margin-left: 15px;
+}
+
+@media (max-width: 1000px) {
+    .containerContato {
+        scale: .9;
+    }
+}
+
+@media (max-width: 900px) {
+    .containerContato {
+        scale: 1;
+        display: flex;
+        flex-direction: column;
+        height: 870px;
+        align-items: center;
+    }
+
+    .emailMesage {
+        margin-right: 0;
+    }
+
+    .contactsArea {
+        top: 0;
+        width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .containerContato {
+        scale: .9;
+    }
+}

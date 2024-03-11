@@ -1,0 +1,108 @@
+.containerProjetos {
+    height: calc(100vh - (100px));
+    background-color: #96969610;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetosTitle {
+    text-align: center;
+    background-image: linear-gradient(45deg, pink, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 60px;
+}
+
+.projetosBox {
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 10%;
+}
+
+.projeto {
+    height: 150px;
+    width: 250px;
+    border: 3px solid purple;
+    border-bottom-right-radius: 30px;
+    color: #fdfdfd;
+    margin: 15px;
+    transition: .4s;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #333;
+}
+
+.projeto:hover {
+    scale: 1.1;
+}
+
+.projectBtnArea > a {
+    padding: 10px;
+    border: 2px solid #555;
+    position: relative;
+    bottom: 13px;
+    cursor: pointer;
+    transition: .5s;
+    margin-right: 10px;
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+.projectBtnArea > a:hover {
+    background-color: #000000a0;
+}
+
+.calculadoraImcTitle {
+    font-size: 25px;
+}
+
+.emBreve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .projetosBox {
+        width: 600px;
+    }
+
+    .projetosBox :nth-child(5) {
+        display: none;
+    }
+    
+    .projetosBox :nth-child(6) {
+        display: none;
+    }
+}
+
+@media (max-width: 660px) {
+    .projetosBox {
+        width: 300px;
+    }
+
+    .projetosBox :nth-child(3) {
+        display: none;
+    }
+    
+    .projetosBox :nth-child(4) {
+        display: none;
+    }
+
+    .projetosBox :nth-child(5) {
+        display: none;
+    }
+    
+    .projetosBox :nth-child(6) {
+        display: none;
+    }
+}

@@ -15,7 +15,7 @@ const Header = ({inicioRef, sobreRef, tecnologiasRef, projetosRef, contatoRef}) 
   };
   
   const [isVisble, setIsVisible] = useState(window.innerWidth > 560);
-  const [isOpen, setIsOpen] = useState(window.innerWidth > 560);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {

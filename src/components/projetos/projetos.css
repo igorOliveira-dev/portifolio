@@ -1,5 +1,5 @@
 .containerProjetos {
-    height: calc(100vh - (100px));
+    height: 600px;
     background-color: #96969610;
     padding-top: 20px;
     display: flex;

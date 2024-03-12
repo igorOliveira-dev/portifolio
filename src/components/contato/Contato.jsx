@@ -18,6 +18,8 @@ const Contato = () => {
       return;
     };
 
+    alert("email enviado com sucesso")
+
     const templateParams = {
       from_name: name,
       message: message,

@@ -9,6 +9,7 @@ import AboutMe from './pages/aboutMe/AboutMe';
 import Skills from './pages/skills/Skills';
 import Projects from './pages/projects/Projects';
 import Contact from './pages/contact/Contact';
+import Footer from './components/footer/Footer';
 
 function isDarkModePreferred() {
   return window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -32,6 +33,7 @@ function App() {
           <Skills ref={skillsRef} />
           <Projects ref={projectsRef} />
           <Contact ref={contactRef} />
+        <Footer />
       </S.Main>
     </ThemeProvider>
   )
